@@ -1,0 +1,55 @@
+<h1>Short date</h1>
+<p>{{ currentDate | date:'M/d/yy' }}</p>
+
+<h1>Full date</h1>
+<p>{{ currentDate | date:'fullDate'}}</p>
+
+<h1>Custom Date (MM/dd/yyyy)</h1>
+<p>{{currentDate | date:'MM/dd/yyyy'}} </p>
+
+<h1>Short time</h1>
+<p>{{ currentDate | date:'shortTime' }} </p>
+
+<h1>Day</h1>
+<p>{{ currentDate | date:'d' }} </p>
+
+<h1>Week</h1>
+<p>{{ currentDate | date:'w'}} </p>
+
+<h1>USD</h1>
+<p>{{ price | currency: 'USD' }}</p>
+
+<h1>USD code</h1>
+<p>{{ price | currency: 'USD':'code' }}</p>
+
+
+<h1>INR</h1>
+<p>{{ price | currency:'INR' }}</p>
+
+<h1>gbp</h1>
+<p>{{ price | currency:'GBP' }}</p>
+
+<h1>Array stream</h1>
+<p>{{ arrayStream$ | async }}</p>
+
+<h1>Transformed Data</h1>
+<p>{{ transformedData$ | async }}</p>
+
+<h1>Nested Arrays</h1>
+<p>{{ nestedArrays | json }}</p>
+<h1>Complex Objects</h1>
+<p>{{ complexData | json }}</p>
+<h1>Mixed Data</h1>
+<p>{{ mixedTypes | json }}</p>
+
+<h1>middle elements</h1>
+<p>{{ numbers | slice:3:6 }} </p>
+
+<h1>Negative start</h1>
+<p>{{ numbers | slice:-3 }} </p>
+
+<h1> last 2 chars</h1>
+<p>{{ longString | slice:-2 }}</p>
+
+<h1>first 5 chars</h1>
+<p>{{ longString | slice:0:5 }}</p>
